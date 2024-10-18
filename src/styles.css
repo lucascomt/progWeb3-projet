@@ -1,0 +1,356 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #e9f3f6;
+  color: #000000;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  min-width: 200px;
+}
+
+/* Positionne header, main et footer */
+.wrapper {
+  box-sizing: border-box;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: #01154e;
+  color: #ffffff;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+footer h2, footer p {
+  margin: 0;
+}
+footer h2 {
+  margin-top: 10px;
+}
+footer img {
+  width: 30px;
+  margin: 5px;
+}
+
+/* Défini largeur maximum de la page */
+.conteneur {
+  max-width: 1600px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+}
+
+/*Permet de positionner des elements un à coté de l'autre*/
+.conteneur-flex {
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/*Permet de positionner des elements dans une grille*/
+.conteneur-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+}
+
+.col-10 {
+  width: 10%;
+}
+
+.col-33 {
+  width: 33%;
+}
+
+.col-90 {
+  width: 90%;
+}
+
+/*Affiche la barre de navigation*/
+nav {
+  font-size: 1rem;
+}
+nav ul {
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+nav .btn {
+  min-width: 150px;
+}
+
+/*Donne du style au boutons*/
+.btn {
+  background-color: #01154e;
+  border: #01154e;
+  border: 1px solid;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+.btn:hover {
+  background-color: #e9f3f6;
+  color: #000000;
+}
+
+/* Modifie l'apparence du logo */
+.logo {
+  width: 75px;
+  margin: 5px;
+  margin-left: 50px;
+}
+
+.div-logo {
+  text-align: right;
+}
+
+.div-titre {
+  text-align: left;
+}
+
+/* Positionne et modifie le texte */
+.texte-gauche {
+  text-align: left;
+}
+
+.texte-droite {
+  text-align: right;
+}
+
+.texte-petit {
+  font-size: 0.8rem;
+}
+
+.texte-centre {
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+/* Dimensionne les elements */
+.top-image {
+  max-height: 100px;
+}
+
+.top-logo {
+  width: 50%;
+  max-width: 150px;
+}
+
+.top-carte {
+  width: 50%;
+  max-width: 250px;
+}
+
+hr {
+  width: 90%;
+  align-items: center;
+}
+
+/* Definie un cadre autour des elements*/
+.cadre {
+  border: #01154e solid 2px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/*formulaire*/
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control input, textarea {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+  width: 90%;
+  margin: auto;
+}
+
+.input-control input:focus, textarea:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.input-control.success textarea {
+  border-color: #09c372;
+}
+
+.input-control.error textarea {
+  border-color: #ff3860;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
+
+/*carte*/
+.carte {
+  margin-top: 20px;
+  border: 1px solid #01154e;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #01154e;
+  text-align: left;
+  align-content: center;
+}
+.carte h2 {
+  color: #ffffff;
+  margin-left: 10px;
+}
+.carte img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.carte-int {
+  background-color: #e9f3f6;
+  margin: 5px;
+  padding: 20px;
+  border-radius: 8px;
+  align-items: center;
+}
+.carte-int h2 {
+  color: #000000;
+}
+.carte-int h3 {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.top-image {
+  width: 100%;
+  max-height: 100px;
+}
+
+.top-logo {
+  width: 50%;
+  max-width: 150px;
+}
+
+.top-carte {
+  width: 50%;
+  max-width: 250px;
+}
+
+.mx-auto {
+  margin: auto;
+}
+
+.enLigne {
+  color: green;
+}
+
+.horsligne {
+  color: red;
+}
+
+/*pour ecran de 1000px et plus*/
+@media screen and (min-width: 1000px) {
+  header .conteneur-grid {
+    grid-template-columns: 1fr 1fr 4fr;
+  }
+}
+/*pour ecran de 1000px et moins*/
+@media screen and (max-width: 1000px) {
+  .conteneur-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  header .conteneur-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/*pour ecran de 700px et moins*/
+@media screen and (max-width: 700px) {
+  .conteneur-grid {
+    grid-template-columns: 1fr;
+  }
+  header .conteneur-grid {
+    grid-template-columns: 1fr;
+  }
+  .conteneur-flex {
+    display: block;
+    padding-bottom: 20px;
+  }
+  .col-33 {
+    width: 100%;
+  }
+  .texte-gauche, .texte-droite {
+    text-align: center;
+  }
+  .logo {
+    margin-left: 0;
+  }
+  .div-logo, .div-titre {
+    text-align: center;
+  }
+  nav li {
+    display: block;
+  }
+}
