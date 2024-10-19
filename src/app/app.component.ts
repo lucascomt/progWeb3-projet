@@ -2,16 +2,18 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./header/header.component";
 import { FooterComponent } from "./footer/footer.component";
-import { BibliothequeComponent } from "./bibliotheque/bibliotheque.component";
-import { ListeSommaireComponent } from "./liste-sommaire/liste-sommaire.component";
+import { QuiSuisJeComponent } from "./qui-suis-je/qui-suis-je.component";
+import { ProgrammationComponent } from "./programmation/programmation.component";
+import { BddComponent } from "./bdd/bdd.component";
+import { PhotographieComponent } from "./photographie/photographie.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, BibliothequeComponent, ListeSommaireComponent, HeaderComponent, FooterComponent],
+  imports: [RouterOutlet, QuiSuisJeComponent, ProgrammationComponent, BddComponent, PhotographieComponent, HeaderComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'progWeb3-projet';
+  title = 'Óðinn';
 }
