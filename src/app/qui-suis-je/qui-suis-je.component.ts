@@ -8,5 +8,23 @@ import { Component } from '@angular/core';
   styleUrl: './qui-suis-je.component.css'
 })
 export class QuiSuisJeComponent {
-
+    age!: number;
+  
+    ngOnInit() {
+      this.age = this.calculateAge('1975-08-12');
+    }
+  
+    calculateAge(birthdate: string): number {
+      const birthDate = new Date(birthdate);
+      const today = new Date();
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const monthDiff = today.getMonth() - birthDate.getMonth();
+  
+      if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+  
+      return age;
+    }
+  
 }
